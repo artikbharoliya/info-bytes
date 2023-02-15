@@ -1,9 +1,12 @@
 import './App.css';
+import HelloWorld from './components/HelloWorld';
+import { ThemesProvider } from './theme/ThemesProvider';
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <ThemesProvider>
+      <HelloWorld title='Artik' />
+    </ThemesProvider>
   );
 }
 
