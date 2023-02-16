@@ -9,10 +9,10 @@ type Props = {
 function HelloWorld({ title }: Props) {
   const { theme, themeType, setCurrentTheme } = useTheme();
   return (
-    <h1>
+    <h5>
       {`Hello! ${title}, you are using '${themeType}' theme at the moment!`}
       <button onClick={() => setCurrentTheme('newYork')}>Click me!</button>
-    </h1>
+    </h5>
   );
 }
 
